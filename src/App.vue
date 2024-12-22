@@ -10,12 +10,7 @@ const formSchema = z.object({
 })
 
 const {handleSubmit, values, meta, resetForm, defineField} = useForm({
-  validationSchema: toTypedSchema(formSchema),
-  initialValues: {
-    field1: undefined,
-    field2: undefined,
-    field3: undefined
-  }
+  validationSchema: toTypedSchema(formSchema)
 });
 
 const [field1]  = defineField('field1');
